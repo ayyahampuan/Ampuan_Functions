@@ -19,8 +19,9 @@ def primes_in_range(start, end):
 while True:
     print("1. Find the smallest factor of a number")
     print("2. Find the prime numbers of range")
+    print("3. End the program")
     print()
-    choice = int(input("Select between 1 or 2: "))
+    choice = int(input("Select between 1, 2, or 3: "))
 
     if choice == 1:
         num1 = int(input("Enter a number: "))
@@ -29,16 +30,16 @@ while True:
         print()
 
     elif choice == 2:
-        start = int(input("Enter the range (start): "))
-        end = int(input("Enter the range (end): "))
+        start = int(input("Enter the range number(start): "))
+        end = int(input("Enter the range number(end): "))
         primes = primes_in_range(start, end)
         print("The prime numbers from", start, "to", end, "is/are:", primes)
         print()
 
-    elif choice == 0:
-        print("Invalid. Program terminated.")
+    elif choice == 3:
+        print("Program terminated. Thank you for trying.")
         break
 
     else:
-        print("Invalid. Please select between 1 or 2 only.")
+        print("Invalid. Please select between 1, 2, or 3 only.")
         print()
